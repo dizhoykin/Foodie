@@ -1,0 +1,149 @@
+.button {
+  display: block;
+  text-align: center;
+  width: 274px;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  border: 3px solid $basic_white;
+  border-radius: 35px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+  color: $basic_white;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: $bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--download:hover,
+.button--download:active {
+  color: $accent_red;
+  background-color: $basic_white;
+}
+
+.button--download:active {
+  color: $opacity_red;
+}
+
+.button--upload {
+  border-color: $accent_red;
+  color: $accent_red;
+
+  margin-bottom: 12px;
+
+  &:hover {
+    background-color: $accent_red;
+    color: $basic_white;
+  }
+}
+
+.button--image-change {
+  width: auto;
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+}
+
+.button--upload:active {
+  background-color: $accent_red;
+  color: $opacity_white;
+}
+
+.button--cancel {
+  border-color: $dark_opacity-grey;
+  color: $dark_opacity-grey;
+
+  margin-bottom: 12px;
+
+  &:hover,
+  &:active {
+    border-color: $dark_grey;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    color: $dark_grey;
+  }
+
+  &:active {
+    background-color: $dark_grey;
+    color: $opacity_white;
+  }
+}
+
+.button--form {
+  border: 2px solid $basic_green;
+  border-radius: 1px;
+  padding: 15px 15px;
+
+  background-color: $basic_green;
+
+  line-height: 30px;
+  text-transform: uppercase;
+  max-width: 296px;
+
+  &:hover,
+  &:active {
+    background-color: $action_green;
+  }
+}
+
+.button--form:active {
+  color: $opacity_white;
+}
+
+@media (min-width: $tablet-width) {
+  .button--download {
+    width: 294px;
+  }
+
+  .button--upload,
+  .button--cancel {
+    max-width: 260px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  .button--form {
+    font-size: 18px;
+    margin: 0 0;
+    width: 296px;
+    height: 63px;
+  }
+
+  .button--image-change {
+    margin-left: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 21px;
+  }
+
+  .button--download {
+    margin-right: 50%;
+    margin-top: 7px;
+  }
+
+  .button--form {
+    font-size: 18px;
+  }
+
+  .button--upload,
+  .button--cancel {
+    width: 183px;
+    font-size: 18px;
+  }
+
+  .button--upload {
+    margin-right: 44px;
+  }
+}

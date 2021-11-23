@@ -1,0 +1,21 @@
+.page-form__description {
+  line-height: 30px;
+  text-align: center;
+
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.page-form__button {
+  padding: 15px 45px;
+  background-color: $basic_green;
+  border: 2px solid $basic_green;
+  border-radius: 1px;
+  color: $basic_white;
+  font-family: $basic_font_family;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  width: 280px;
+}

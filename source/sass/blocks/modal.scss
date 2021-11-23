@@ -1,0 +1,161 @@
+.modal {
+  padding-top: 36px;
+  padding-left: 0;
+  padding-right: 0;
+
+  width: 100%;
+
+  position: fixed;
+
+  right: 0;
+  bottom: 187px;
+  left: 0;
+  background-color: $basic_white;
+  text-align: center;
+
+  box-shadow: 0 4px 4px $opacity_black;
+}
+
+.modal__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: $bold;
+  margin-bottom: 25px;
+  color: $basic_black;
+}
+
+.modal__text {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.modal--success .modal__text {
+  margin-bottom: 30px;
+}
+
+.modal__background {
+  background-color: $light_grey;
+  padding: 52px 0;
+}
+
+.modal--error .modal__background {
+  padding-top: 38px;
+  background-color: $basic_white;
+}
+
+.modal--error .modal__text {
+  margin: 4px 0 0;
+}
+
+.modal--error .modal__wrapper {
+  padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    margin: 20px 0 29px;
+  }
+
+  .modal__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal--error .modal__text {
+    margin: 12px 0 -9px;
+  }
+
+  .modal .button--form {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+    min-height: 334px;
+    margin: 0 auto;
+  }
+
+  .modal--error {
+    height: 335px;
+  }
+
+  .modal__wrapper {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal--error .modal__wrapper {
+    padding-bottom: 71px;
+  }
+
+  .modal__title {
+    margin-bottom: 22px;
+  }
+
+  .modal__text {
+    margin-bottom: 17px;
+  }
+
+  .modal--success .modal__text {
+    margin-bottom: 38px;
+  }
+
+  .modal__background {
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+
+  .modal--error .modal__background {
+    background-color: $light_grey;
+    padding-bottom: 0;
+  }
+
+  .modal--success .modal__background {
+    padding-bottom: 47px;
+  }
+
+  .modal .button--form {
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 456px;
+    margin-top: 3px;
+    margin-left: -20px;
+  }
+
+  .modal--error .button--form {
+    padding-left: 65px;
+    padding-right: 63px;
+    min-width: 290px;
+    margin-top: 14px;
+    margin-left: 59px;
+  }
+}

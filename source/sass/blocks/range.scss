@@ -1,0 +1,108 @@
+.range {
+  position: absolute;
+  display: none;
+  top: 66px;
+  width: 100%;
+  margin-left: 13px;
+}
+
+.range__scale {
+  position: relative;
+  width: 280px;
+  margin-top: 18px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid $dark_opacity-grey;
+}
+
+.range__bar {
+  height: 2px;
+  background-color: $dark_grey;
+  width: 86%;
+}
+
+.range__toggle {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  top: -6px;
+  left: 14px;
+  background-color: $basic_white;
+  border: 2px solid $accent_red;
+  border-radius: 50%;
+}
+
+.range__toggle:active {
+  background-color: $accent_red;
+}
+
+.range__toggle--cut {
+  left: 194px;
+}
+
+.range__toggle--fill {
+  left: 50px;
+}
+
+.range__toggle--contrast {
+  left: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    position: static;
+    display: block;
+  }
+
+  .range__bar {
+    margin-left: 20px;
+  }
+
+  .range:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .range__scale {
+    width: 240px;
+    padding-left: 41px;
+    padding-right: 0;
+    margin-top: 5px;
+    margin-bottom: 37px;
+    padding-bottom: 32px;
+  }
+
+  .range__toggle--cut {
+    left: 223px;
+  }
+
+  .range__toggle--fill {
+    left: 88px;
+  }
+
+  .range__toggle--contrast {
+    left: 159px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__scale {
+    width: 335px;
+  }
+
+  .range__bar {
+    margin-left: 38px;
+  }
+
+  .range__toggle--cut {
+    left: 313px;
+  }
+
+  .range__toggle--fill {
+    left: 115px;
+  }
+
+  .range__toggle--contrast {
+    left: 216px;
+  }
+}

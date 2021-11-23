@@ -1,0 +1,145 @@
+.card__caption {
+  background-color: $light_grey;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 12px;
+}
+
+.card__author {
+  font-weight: $bold;
+}
+
+.card__time {
+  font-size: 12px;
+  font-weight: $light;
+  text-transform: uppercase;
+}
+
+.card__comment {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.card__like-button {
+  border: none;
+  text-transform: uppercase;
+  color: $accent_red;
+  font-family: inherit;
+  font-size: 12px;
+  background-color: $light_grey;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1px;
+}
+
+.card__like-label {
+  margin-left: 18px;
+}
+
+.card__wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .card__wrapper {
+    width: auto;
+  }
+
+  .card__wrapper--main {
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card__caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 136px;
+  }
+
+  .card__caption--gallery {
+    padding-bottom: 0;
+  }
+
+  .card__like-button {
+    margin-top: auto;
+    text-align: start;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .card__like-button--main {
+    justify-content: flex-start;
+
+    svg {
+      margin-left: 16px;
+    }
+  }
+
+  .card__like-label {
+    margin-left: 13px;
+  }
+
+  .card__caption--main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: auto;
+    align-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .card__caption--main .card__like-button {
+    order: -1;
+    margin-right: 12px;
+    margin-top: 9px;
+  }
+
+  .card__like__svg {
+    margin-right: 12px;
+    margin-bottom: 30px;
+  }
+
+  .card__author {
+    margin-left: 13px;
+    margin-top: 4px;
+  }
+
+  .card__caption--main .card__author {
+    order: -2;
+    margin-top: 4px;
+    margin-left: 14px;
+  }
+
+  .card__comment {
+    margin: 0 0 8px;
+    margin-left: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__wrapper--main {
+    width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card__caption--main .card__author {
+    margin-left: 11px;
+  }
+
+  .card__comment {
+    margin: 0 0 4px 12px;
+  }
+
+  .card__caption {
+    padding-left: 14px;
+  }
+}

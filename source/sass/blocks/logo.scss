@@ -1,0 +1,106 @@
+.logo {
+  width: 74px;
+  height: 23px;
+  font-size: 0;
+}
+
+.logo--header {
+  position: absolute;
+  top: 22px;
+  z-index: 10;
+  left: 20px;
+}
+
+.logo--footer {
+  display: block;
+  width: 145px;
+  height: 40px;
+  margin-bottom: 24px;
+}
+
+.logo__svg--tablet,
+.logo__svg--desktop {
+  display: none;
+}
+
+.logo__svg--header {
+  fill: $basic_white;
+}
+
+.logo__svg--footer {
+  fill: $dark_grey;
+}
+
+.logo--htmlacademy {
+  fill: $accent_red;
+  width: 27px;
+  height: 42px;
+
+  &:hover {
+    fill: $dark_grey;
+  }
+
+  &:active {
+    fill: $dark_opacity-grey;
+  }
+}
+
+.logo--header:hover .logo__svg--header,
+.logo--footer:hover .logo__svg--footer {
+  fill: $accent_red;
+}
+
+.logo--header:active .logo__svg--header {
+  fill: $basic_white;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__svg--footer {
+  fill: $dark_grey;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .logo--header {
+    width: 145px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+
+  .logo__svg--tablet {
+    display: block;
+  }
+
+  .logo__svg--mobile,
+  .logo__svg--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo--header,
+  .logo--footer {
+    width: 147px;
+  }
+
+  .logo--header {
+    top: 15px;
+    left: 0;
+  }
+
+  .logo__svg--desktop {
+    display: block;
+  }
+
+  .logo__svg--mobile,
+  .logo__svg--tablet,
+  .logo__svg--mobile-tablet {
+    display: none;
+  }
+
+  .logo--htmlacademy {
+    height: 56px;
+  }
+}

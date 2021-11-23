@@ -1,300 +1,300 @@
-.intro {
-  background-image: url("../img/decoration/back-mobile.jpg");
-
-  @supports (background-image: url("../img/decoration/back-mobile.webp")) {
-    background-image: url("../img/decoration/back-mobile.webp");
-  }
-
-  background-color: $accent_grey;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding-top: 90px;
-}
-
-@media (min-resolution: 2dppx) {
-  .intro {
-    background-image: url("../img/decoration/back-mobile@2x.jpg");
-
-    @supports (background-image: url("../img/decoration/back-mobile@2x.webp")) {
-      background-image: url("../img/decoration/back-mobile@2x.webp");
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .intro {
-    background-image: url("../img/decoration/back-tablet.jpg");
-
-    @supports (background-image: url("../img/decoration/back-tablet.webp")) {
-      background-image: url("../img/decoration/back-tablet.webp");
-    }
-
-    background-size: 100% auto;
-    background-position: 50% 0;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .intro {
-      background-image: url("../img/decoration/back-tablet@2x.jpg");
-
-      @supports (background-image: url("../img/decoration/back-tablet@2x.webp")) {
-        background-image: url("../img/decoration/back-tablet@2x.webp");
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro {
-    background-image: url("../img/decoration/back-desktop.jpg");
-
-    @supports (background-image: url("../img/decoration/back-desktop.webp")) {
-      background-image: url("../img/decoration/back-desktop.webp");
-    }
-    background-position: 100% 0;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .intro {
-      background-image: url("../img/decoration/back-desktop@2x.jpg");
-
-      @supports (background-image: url("../img/decoration/back-desktop@2x.webp")) {
-        background-image: url("../img/decoration/back-desktop@2x.webp");
-      }
-    }
-  }
-}
-
-.intro__box {
-  background-image: url("../img/decoration/phone-mobile.png");
-
-  @supports (background-image: url("../img/decoration/phone-mobile.webp")) {
-    background-image: url("../img/decoration/phone-mobile.webp");
-  }
-
-  background-repeat: no-repeat;
-  background-position: 50% 85px;
-}
-
-@media (min-resolution: 2dppx) {
-  .intro__box {
-    background-image: url("../img/decoration/phone-mobile@2x.png");
-
-    @supports (background-image: url("../img/decoration/phone-mobile@2x.webp")) {
-      background-image: url("../img/decoration/phone-mobile@2x.webp");
-    }
-
-    background-size: 320px 286px;
-  }
-}
-
-.intro__box--inner {
-  background: none;
-  padding-bottom: 50px;
-}
-
-.intro__download {
-  background-color: $accent_grey;
-  padding-bottom: 24px;
-  padding-top: 28px;
-}
-
-.intro--inner {
-  padding-top: 96px;
-}
-
-.intro__slogan {
-  margin: 0;
-  margin-bottom: 316px;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 280px;
-}
-
-.intro__slogan--inner {
-  padding-bottom: 30px;
-  margin-bottom: 0;
-}
-
-.intro__platforms {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 8px;
-  min-width: 280px;
-}
-
-.intro__platform-item {
-  padding: 0 17px;
-  display: inline-block;
-}
-
-.intro__platform-item--apple {
-  padding-top: 1px;
-}
-
-.intro__platforms-description {
-  margin-top: 14px;
-  margin-bottom: 0;
-  font-weight: $light;
-  color: $basic_white;
-
-  text-align: center;
-  width: 280px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .intro {
-    padding-top: 150px;
-  }
-
-  .intro--inner {
-    padding-top: 125px;
-    padding-bottom: 48px;
-    padding-left: 9px;
-  }
-
-  .intro--form {
-    padding-bottom: 12px;
-  }
-
-  .intro__box {
-    background-image: url("../img/decoration/phone-tablet.png");
-
-    @supports (background-image: url("../img/decoration/phone-tablet.webp")) {
-      background-image: url("../img/decoration/phone-tablet.webp");
-    }
-
-    background-position: 50% 100%;
-    padding-right: 330px;
-    padding-bottom: 83px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .intro__box {
-      background-image: url("../img/decoration/phone-tablet@2x.png");
-
-      @supports (background-image: url("../img/decoration/phone-tablet@2x.webp")) {
-        background-image: url("../img/decoration/phone-tablet@2x.webp");
-      }
-
-      background-size: 660px 545px;
-    }
-  }
-
-  .intro__download {
-    background: none;
-  }
-
-  .intro__slogan {
-    margin-bottom: 3px;
-    padding-top: 53px;
-    padding-left: 10px;
-  }
-
-  .intro__slogan--inner {
-    padding-bottom: 100px;
-    width: 510px;
-  }
-
-  .intro__wrapper {
-    width: 620px;
-  }
-
-  .intro__platforms {
-    margin-left: 6px;
-    margin-top: 42px;
-  }
-
-  .intro__platform-item {
-    padding-top: 0;
-  }
-
-  .intro__platform-item--google {
-    padding: 0 16px;
-  }
-
-  .intro__platform-item--microsoft {
-    padding-top: 12px;
-  }
-
-  .intro__platforms-description {
-    font-size: 18px;
-    width: 295px;
-    margin-top: 27px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro {
-    padding-top: 171px;
-  }
-
-  .intro--inner {
-    padding-bottom: 36px;
-  }
-
-  .intro--form {
-    padding-bottom: 1px;
-  }
-
-
-  .intro__box {
-    background-image: url("../img/decoration/phone-desktop.png");
-
-    @supports (background-image: url("../img/decoration/phone-desktop.webp")) {
-      background-image: url("../img/decoration/phone-desktop.webp");
-    }
-
-    background-position: calc(50% + 71px) 100%;
-    padding-bottom: 93px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .intro__box {
-      background-image: url("../img/decoration/phone-desktop@2x.png");
-
-      @supports (background-image: url("../img/decoration/phone-desktop@2x.webp")) {
-        background-image: url("../img/decoration/phone-desktop@2x.webp");
-      }
-
-      background-size: 1050px 645px;
-    }
-  }
-
-  .intro__slogan {
-    padding-top: 37px;
-    padding-right: 321px;
-  }
-
-  .intro__slogan--inner {
-    width: 760px;
-    margin-bottom: 43px;
-    padding: 0 10px 100px 0;
-  }
-
-  .intro__wrapper {
-    width: 940px;
-  }
-
-  .intro__platforms {
-    margin-right: 321px;
-    margin-top: 66px;
-  }
-
-  .intro__platforms-description {
-    margin-top: 46px;
-  }
-}
+// .intro {
+//   background-image: url("../img/decoration/back-mobile.jpg");
+//
+//   @supports (background-image: url("../img/decoration/back-mobile.webp")) {
+//     background-image: url("../img/decoration/back-mobile.webp");
+//   }
+//
+//   background-color: $accent_grey;
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   padding-top: 90px;
+// }
+//
+// @media (min-resolution: 2dppx) {
+//   .intro {
+//     background-image: url("../img/decoration/back-mobile@2x.jpg");
+//
+//     @supports (background-image: url("../img/decoration/back-mobile@2x.webp")) {
+//       background-image: url("../img/decoration/back-mobile@2x.webp");
+//     }
+//   }
+// }
+//
+// @media (min-width: $tablet-width) {
+//   .intro {
+//     background-image: url("../img/decoration/back-tablet.jpg");
+//
+//     @supports (background-image: url("../img/decoration/back-tablet.webp")) {
+//       background-image: url("../img/decoration/back-tablet.webp");
+//     }
+//
+//     background-size: 100% auto;
+//     background-position: 50% 0;
+//   }
+//
+//   @media (min-resolution: 2dppx) {
+//     .intro {
+//       background-image: url("../img/decoration/back-tablet@2x.jpg");
+//
+//       @supports (background-image: url("../img/decoration/back-tablet@2x.webp")) {
+//         background-image: url("../img/decoration/back-tablet@2x.webp");
+//       }
+//     }
+//   }
+// }
+//
+// @media (min-width: $desktop-width) {
+//   .intro {
+//     background-image: url("../img/decoration/back-desktop.jpg");
+//
+//     @supports (background-image: url("../img/decoration/back-desktop.webp")) {
+//       background-image: url("../img/decoration/back-desktop.webp");
+//     }
+//     background-position: 100% 0;
+//   }
+//
+//   @media (min-resolution: 2dppx) {
+//     .intro {
+//       background-image: url("../img/decoration/back-desktop@2x.jpg");
+//
+//       @supports (background-image: url("../img/decoration/back-desktop@2x.webp")) {
+//         background-image: url("../img/decoration/back-desktop@2x.webp");
+//       }
+//     }
+//   }
+// }
+//
+// .intro__box {
+//   background-image: url("../img/decoration/phone-mobile.png");
+//
+//   @supports (background-image: url("../img/decoration/phone-mobile.webp")) {
+//     background-image: url("../img/decoration/phone-mobile.webp");
+//   }
+//
+//   background-repeat: no-repeat;
+//   background-position: 50% 85px;
+// }
+//
+// @media (min-resolution: 2dppx) {
+//   .intro__box {
+//     background-image: url("../img/decoration/phone-mobile@2x.png");
+//
+//     @supports (background-image: url("../img/decoration/phone-mobile@2x.webp")) {
+//       background-image: url("../img/decoration/phone-mobile@2x.webp");
+//     }
+//
+//     background-size: 320px 286px;
+//   }
+// }
+//
+// .intro__box--inner {
+//   background: none;
+//   padding-bottom: 50px;
+// }
+//
+// .intro__download {
+//   background-color: $accent_grey;
+//   padding-bottom: 24px;
+//   padding-top: 28px;
+// }
+//
+// .intro--inner {
+//   padding-top: 96px;
+// }
+//
+// .intro__slogan {
+//   margin: 0;
+//   margin-bottom: 316px;
+//   display: block;
+//   text-align: center;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 280px;
+// }
+//
+// .intro__slogan--inner {
+//   padding-bottom: 30px;
+//   margin-bottom: 0;
+// }
+//
+// .intro__platforms {
+//   text-align: center;
+//   margin: 0 auto;
+//   margin-top: 30px;
+//   margin-bottom: 8px;
+//   min-width: 280px;
+// }
+//
+// .intro__platform-item {
+//   padding: 0 17px;
+//   display: inline-block;
+// }
+//
+// .intro__platform-item--apple {
+//   padding-top: 1px;
+// }
+//
+// .intro__platforms-description {
+//   margin-top: 14px;
+//   margin-bottom: 0;
+//   font-weight: $light;
+//   color: $basic_white;
+//
+//   text-align: center;
+//   width: 280px;
+//
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+//
+// .intro__wrapper {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+//
+// @media (min-width: $tablet-width) {
+//   .intro {
+//     padding-top: 150px;
+//   }
+//
+//   .intro--inner {
+//     padding-top: 125px;
+//     padding-bottom: 48px;
+//     padding-left: 9px;
+//   }
+//
+//   .intro--form {
+//     padding-bottom: 12px;
+//   }
+//
+//   .intro__box {
+//     background-image: url("../img/decoration/phone-tablet.png");
+//
+//     @supports (background-image: url("../img/decoration/phone-tablet.webp")) {
+//       background-image: url("../img/decoration/phone-tablet.webp");
+//     }
+//
+//     background-position: 50% 100%;
+//     padding-right: 330px;
+//     padding-bottom: 83px;
+//   }
+//
+//   @media (min-resolution: 2dppx) {
+//     .intro__box {
+//       background-image: url("../img/decoration/phone-tablet@2x.png");
+//
+//       @supports (background-image: url("../img/decoration/phone-tablet@2x.webp")) {
+//         background-image: url("../img/decoration/phone-tablet@2x.webp");
+//       }
+//
+//       background-size: 660px 545px;
+//     }
+//   }
+//
+//   .intro__download {
+//     background: none;
+//   }
+//
+//   .intro__slogan {
+//     margin-bottom: 3px;
+//     padding-top: 53px;
+//     padding-left: 10px;
+//   }
+//
+//   .intro__slogan--inner {
+//     padding-bottom: 100px;
+//     width: 510px;
+//   }
+//
+//   .intro__wrapper {
+//     width: 620px;
+//   }
+//
+//   .intro__platforms {
+//     margin-left: 6px;
+//     margin-top: 42px;
+//   }
+//
+//   .intro__platform-item {
+//     padding-top: 0;
+//   }
+//
+//   .intro__platform-item--google {
+//     padding: 0 16px;
+//   }
+//
+//   .intro__platform-item--microsoft {
+//     padding-top: 12px;
+//   }
+//
+//   .intro__platforms-description {
+//     font-size: 18px;
+//     width: 295px;
+//     margin-top: 27px;
+//   }
+// }
+//
+// @media (min-width: $desktop-width) {
+//   .intro {
+//     padding-top: 171px;
+//   }
+//
+//   .intro--inner {
+//     padding-bottom: 36px;
+//   }
+//
+//   .intro--form {
+//     padding-bottom: 1px;
+//   }
+//
+//
+//   .intro__box {
+//     background-image: url("../img/decoration/phone-desktop.png");
+//
+//     @supports (background-image: url("../img/decoration/phone-desktop.webp")) {
+//       background-image: url("../img/decoration/phone-desktop.webp");
+//     }
+//
+//     background-position: calc(50% + 71px) 100%;
+//     padding-bottom: 93px;
+//   }
+//
+//   @media (min-resolution: 2dppx) {
+//     .intro__box {
+//       background-image: url("../img/decoration/phone-desktop@2x.png");
+//
+//       @supports (background-image: url("../img/decoration/phone-desktop@2x.webp")) {
+//         background-image: url("../img/decoration/phone-desktop@2x.webp");
+//       }
+//
+//       background-size: 1050px 645px;
+//     }
+//   }
+//
+//   .intro__slogan {
+//     padding-top: 37px;
+//     padding-right: 321px;
+//   }
+//
+//   .intro__slogan--inner {
+//     width: 760px;
+//     margin-bottom: 43px;
+//     padding: 0 10px 100px 0;
+//   }
+//
+//   .intro__wrapper {
+//     width: 940px;
+//   }
+//
+//   .intro__platforms {
+//     margin-right: 321px;
+//     margin-top: 66px;
+//   }
+//
+//   .intro__platforms-description {
+//     margin-top: 46px;
+//   }
+// }

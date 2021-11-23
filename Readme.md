@@ -1,58 +1,93 @@
-# Личный проект «Пинк»
+# Тестовый проект Foodie для верстки HTML5 + CSS3
 
-* Студент: [Дмитрий Ижойкин](https://up.htmlacademy.ru/adaptive/22/user/1191349).
-* Наставник: `Ярослав Шевцов`.
-
----
-
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
-
-Полезный файл:
-
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+* Студент: [Дмитрий Ижойкин](https://github.com/dizhoykin).
 
 ---
 
-### Памятка
+**Папка с исходными файлами — `source/`.**
 
-#### 1. Зарегистрируйтесь на Гитхабе
+----------------------------------------------- Общий порядок разработки проекта:------------------------------------
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+-3. Подбор подходящего макета в FIGMA и его модификация (если надо)
 
-#### 2. Создайте форк
+-2. Создание проекта в GITHUB (клонирование из этого проекта на GitHub), инициализация проекта в локальной репе, связь удаленного и локального репов (git clone origin master), настройка npm, gulp, json, команды git
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1191349-pink-22) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+Собственно разработка:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
+-1. Mobile first - определение размеров переходов между mobile, tablet, desktop
 
-Получится вот так:
+0. DOCTYPE, html -> lang, head -> meta, title
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808087-2505a400-a190-11e9-8caa-2e7584c702cc.jpg">
+1. Выделяем крупные смысловые блоки на каждой странице сайта
+	-  header, main, footer
 
-#### 3. Клонируйте репозиторий на свой компьютер
+2. Размечаем в блоках крупные смысловые разделы
+	- nav, section, article, aside
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
+3. Выделяем заголовок всего документа и заголовки смысловых разделов
+	- h1 (единственный на странице), h2, h3 - на блоках
+	- шрифты
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808090-259e3a80-a190-11e9-8a64-c58d94803b73.jpg">
+4. Размечаем мелкие элементы в смысловых разделах
+	- div, span,
+	- списки -ul(ol) -> li, dl -> dt -> dd
+	- таблицы - table -> th, tr -> td
+	- иллюстрации - figure -> figcaption, img
+	- параграфы, переносы -  p, br
+	- формы - form (action, method), fieldset, legend -> input, label, textarea, button
+	- цитаты - blockquote, cite, q
+	- контакты - address, tel, email
+	- прогресс - progress, meter
+	- шрифты
 
-Клонировать репозиторий можно так:
+5. Фразовые элементы
+	- img (src, alt, title)
+	- a (href)
+	- button (type)
+	- video (poster, width, height, controls, preload) -> source (src, type)
+	- time (datetime)
+	- b, i, strong, em, span, s, ins, del
+	- шрифты
 
-```
-git clone SSH-адрес_вашего_форка
-```
+6. SASS (CSS)
+	- компиляция SASS в CSS
+	- БЭМ
+	- import
+	- normalize
+	- глобальные переменные
+	- сетки и микросетки (grid, flex)
+	- стилизация (отступы, шрифты, цвета)
+	- медиазапросы
+	- поведение (hover, active)
+	- анимация
 
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+7. Оптимизация
+	- сжатие картинок
+	- оптимизация под retina
+	- SVG
+	- спрайты
+	- minimize
 
-#### 4. Начинайте обучение!
+6. JavaScript
+	- БЭМ
+	- подключение скрипта (main.js) в html (type = module)
+	- в main.js -> import {functionName} from './moduleName.js' -> вызов functionName
+	- разделение кода на api.js, data.js, utils.js, popup.js, form.js
+	- кодинг
 
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/1191349-pink-22/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1191349-pink-22/actions
+7. Тестирование
+	- совпадение с макетом (+ поведение)
+	- работа интерактивных элементов
+	- валидность (w3.org)
+	- переполнение
+	- кроссбраузерность
+	- работа скриптов (+ ошибки в консоли)
+	- контент, заголовки
+	- шрифты
+	- favicon
+	- интерактивный курсор
+	- Локализация (RU-EN, date, LTR-RTL, шрифты)
+	- Включение AdBlock
+	- формы (подписи полей, запись данных, localStorage, верификация, обратная связь)
+	- верные ссылки
+	- уборка мусора (неиспользуемый код, ненужные комментарии)

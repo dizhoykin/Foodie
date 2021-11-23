@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+var sass = require("gulp-sass")(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -17,7 +17,7 @@ const terser = require("gulp-terser");
 // HTML
 
 const html = () => {
-  return gulp.src("source/*.html")
+  return gulp.src("source/*.html", {"allowEmpty": true})
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
@@ -27,7 +27,7 @@ exports.html = html;
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/style.scss", {"allowEmpty": true})
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -47,7 +47,7 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/script.js", {"allowEmpty": true})
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -59,7 +59,7 @@ exports.scripts = scripts;
 // Images
 
 const optimizeImages  = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}", {"allowEmpty": true})
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -71,7 +71,7 @@ const optimizeImages  = () => {
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}", {"allowEmpty": true})
     .pipe(gulp.dest("build/img"))
 }
 
@@ -80,7 +80,7 @@ exports.images = copyImages;
 // WebP
 
 const createWebP = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("source/img/**/*.{jpg,png}", {"allowEmpty": true})
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 }
@@ -90,7 +90,7 @@ exports.createWebP = createWebP;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/img/**/*.svg", {"allowEmpty": true})
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -142,7 +142,9 @@ const copy = (done) => {
     "source/img/favicon/favicon.ico",
     "source/img/favicon/manifest.webmanifest",
     "source/img/**/*.{*.svg}"
-  ], {
+  ],
+    {"allowEmpty": true},
+  {
     base: "source"
   })
   .pipe(gulp.dest("build"))

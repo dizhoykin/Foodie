@@ -1,6 +1,6 @@
 # Тестовый проект Foodie для верстки HTML5 + CSS3
 
-Дмитрий Ижойкин(https://github.com/dizhoykin).
+Дмитрий Ижойкин (https://github.com/dizhoykin).
 
 ---
 

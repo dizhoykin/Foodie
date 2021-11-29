@@ -1,160 +1,289 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Foodie</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
+
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
   </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <img src="img\logo\logo.svg">
-          <div class="nav">
-            <ul class="nav__main-nav">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">How It Works</a>
-              </li>
-              <li>
-                <a href="#">Screenshots</a>
-              </li>
-            </ul>
-          <button type="button" name="button" class="button">Login</button>
-        </div>
-      </div>
-    </header>
+  <body class="page">
+    <header class="page-header">
 
-    <main>
-      <div class="contaner">
-        <section class="promo">
-          <h1>Awesome App for Your Modern Lifestyle</h1>
-          <p>We'll help you make your plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more.</p>
-          <a href="#" class="button">App Store</a>
-          <a href="#" class="button">Google Play</a>
-        </section>
+      <a class="logo">
+        <img class="logo__image logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156px" height="38px">
+      </a>
 
-        <section class="intro">
-          <div class="description">
-            <h2>About Us</h2>
-            <p>Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!</p>
-            <p>We consist of a constantly growing community of local experts showcasing a range of curated content around events, food, shopping, fashion, sightseeing, local communities, travel and so much more!We'll help you make your weekend plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more. Here's a little taste of the plethora of features we offer -You will happily receive expert recommendations tailor-made to suit your interests. We'll be providing you with city-specific stories and videos, handy local information - all right on your smartphone, ready to be scrolled through!We'll be updating and pushing through fresh content every few hours, giving you more than enough time to scan through and make plans to explore your city.You can also like, share and bookmark all your favorite articles and blurbs, and store them ready for future lookups!We pride ourselves on being one of the fastest-loading apps out there today so that you'll have a seamless browsing experience.With all this and more, all fresh and ready for you guys, this is one platform that'll become your lifeline to navigate all corners of your city. Explore away!</p>
-          </div>
-        </section>
-
-        <section class="actions">
-          <h2>How does this App Work?</h2>
-          <dl>
-            <dt>Make a profile</dt>
-            <dd>Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!</dd>
-            <dt>Download it for Free</dt>
-            <dd>Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!</dd>
-            <dt>Enjoy this App</dt>
-            <dd>Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!</dd>
-          </dl>
-        </section>
-
-        <section>
-          <h2>Screenshots</h2>
-          <div class="slider">
-            <img src="" alt="Promo Screen">
-            <img src="" alt="Menu Screen">
-            <img src="" alt="Product Screen">
-          </div>
-        </section>
-
-        <section class="reviews">
-          <h2>Our Clients Speak</h2>
-          <p>We have been working with clients around the world</p>
-          <div class="slider">
-            <ul>
-              <li class=card>
-                <blockquote>
-                  <h3>Efficient Collaborating</h3>
-                  <p>Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome! </p>
-                  <img src="" alt="Author Logo">
-                  <cite>Jane Cooper</cite>
-                  <cite>CEO at ABC Corporation</cite>
-                </blockquote>
-              </li>
-              <li class=card>
-                <blockquote>
-                  <h3>Intuitive Design</h3>
-                  <p>Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome! </p>
-                  <img src="" alt="Author Logo">
-                  <cite>Jane Cooper</cite>
-                  <cite>CEO at ABC Corporation</cite>
-                </blockquote>
-              </li>
-              <li class=card>
-                <blockquote>
-                  <h3>Mindblowing Service</h3>
-                  <p>Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome! </p>
-                  <img src="" alt="Author Logo">
-                  <cite>Jane Cooper</cite>
-                  <cite>CEO at ABC Corporation</cite>
-                </blockquote>
-              </li>
-            </ul>
-            <div class="slider__toggles">
-              <button type="button" name="button" class="slider__toggle">
-              </button>
-              <button type="button" name="button" class="slider__toggle">
-              </button>
-              <button type="button" name="button" class="slider__toggle slider__toggle--current">
-              </button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <img src="img\logo\logo.svg">
-        <div class="">
-          <ul class="nav">
-            <li><a href="#">About</a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list site-list--header">
+            <li class="site-list__item">
+              <a href="#">
+                Home
+              </a>
             </li>
-            <li><a href="#">How it works</a>
+            <li class="site-list__item site-list__item--header">
+              <a href="#">
+                About Us
+              </a>
             </li>
-            <li><a href="#">Contact Us</a>
+            <li class="site-list__item site-list__item--header">
+              <a href="#">
+                How It Works
+              </a>
             </li>
-            <li><a href="#">Help</a>
+            <li class="site-list__item site-list__item--header">
+              <a href="#">
+                Screenshots
+              </a>
             </li>
-            <li><a href="#">Privacy Policy</a>
+            <li class="site-list__item site-list__item--header">
+              <a href="#">
+                Testimonials
+              </a>
             </li>
           </ul>
-          <p class="copyright">2021 Foodie. All rights reserved
+          <div class="main-nav__list user-list">
+            <a class="user-list__login" href="login.html">
+              Login
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="promo">
+        <h1 class="visually-hidden">App "Foodie"</h1>
+        <div class="promo__wrapper">
+          <h2>Awesome App for Your Modern Lifestyle</h2>
+          <p>
+            We'll help you make your plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more.
+          </p>
+          <div class="promo__platforms">
+            <a class="promo__platform-item" href="#">
+              App Store
+            </a>
+            <a class="promo__platform-item" href="#">
+              Google Play
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main">
+
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2>About Us</h2>
+          <p>
+            Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
+          </p>
+          <p>
+            We consist of a constantly growing community of local experts showcasing a range of curated content around events, food, shopping, fashion, sightseeing, local communities, travel and so much more!We'll help you make your weekend plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more. Here's a little taste of the plethora of features we offer -You will happily receive expert recommendations   tailor-made to suit your interests. We'll be providing you with city-specific stories and videos, handy local information - all right on your smartphone, ready to be scrolled through!We'll be updating and pushing through fresh content every few hours, giving you more than enough time to scan through and make plans to explore your city.You can also like, share and bookmark all your favorite articles and blurbs, and store them ready for future lookups!We pride ourselves on being one of the fastest-loading apps out there today so that you'll have a seamless browsing experience.With all this and more, all fresh and ready for you guys, this is one platform that'll become your lifeline to navigate all corners of your city. Explore away!
           </p>
         </div>
-        <div class="">
-          <p>Get the App</p>
-            <ul>
-              <li>
-                <a href="#" title="App Store Dowload Badge">
+      </section>
+
+      <section class="actions">
+        <div class="actions__wrapper">
+          <h2>How does this App Work?</h2>
+            <ul class="actions__list">
+              <li class="actions__item">
+                <p class="actions__tagline">
+                  Make a profile
+                </p>
+                <p>
+                  Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
+                </p>
+              </li>
+              <li class="actions__item">
+                <p class="actions__tagline">
+                  Download it for Free
+                </p>
+                <p>
+                  Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
+                </p>
+              </li>
+              <li class="actions__item">
+                <p class="actions__tagline">
+                  Enjoy this App
+                </p>
+                <p>
+                  Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
+                </p>
+              </li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="screenshots">
+        <div class="screenshots__wrapper slider">
+          <h2>
+            Screenshots
+          </h2>
+          <ul class="screenshots__list slider__list">
+            <li class="screenshots__item slider__item">
+              <img src="img\mockups\phone-promo@1x.png" alt="Promo Screen" width="290px" height="579px">
+            </li>
+            <li class="screenshots__item slider__item">
+              <img src="img\mockups\phone-menu@1x.png" alt="Menu Screen" width="290px" height="579px">
+            </li>
+            <li class="screenshots__item slider__item">
+              <img src="img\mockups\phone-product@1x.png" alt="Product Screen" width="290px" height="579px">
+            </li>
+          </ul>
+          <p class="screenshots__toggles slider__toggles">
+            <button class="slider__toggle" type="button">
+              left
+            </button>
+            <button class="slider__toggle" type="button">
+              right
+            </button>
+          </p>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2>
+            Our Clients Speak
+          </h2>
+          <p>
+            We have been working with clients around the world
+          </p>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <h3 class="reviews__tagline">
+                  Efficient Collaborating
+                </h3>
+                <p class="reviews__text">
+                  Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
+                </p>
+                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <cite class="reviews__author">
+                  Jane Cooper
+                </cite>
+                <cite class="reviews__status">
+                  CEO at ABC Corporation
+                </cite>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <h3 class="reviews__tagline">
+                  Intuitive Design
+                </h3>
+                <p class="reviews__text">
+                  Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
+                </p>
+                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <cite class="reviews__author">
+                  Jane Cooper
+                </cite>
+                <cite class="reviews__status">
+                  CEO at ABC Corporation
+                </cite>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <h3 class="reviews__tagline">
+                  Mindblowing Service
+                </h3>
+                <p class="reviews__text">
+                  Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
+                </p>
+                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <cite class="reviews__author">
+                  Jane Cooper
+                </cite>
+                <cite class="reviews__status">
+                  CEO at ABC Corporation
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="reviews__toggle slider__toggle" type="button">
+              1
+            </button>
+            <button class="reviews__toggle reviews__toggle--current slider__toggle" type="button">
+              2
+            </button>
+            <button class="reviews__toggle slider__toggle" type="button">
+              3
+            </button>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="logo">
+          <img class="logo__image logo__image--footer" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="138px" height="24px">
+        </a>
+        <div class="page-footer__menu">
+          <ul class="site-list site-list--footer">
+            <li class="site-list__item site-list__item--footer">
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--footer">
+              <a href="#">
+                How it works
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--footer">
+              <a href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--footer">
+              <a href="#">
+                Help
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--footer">
+              <a href="#">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            &#xa9; 2021 Foodie. All rights reserved
+          </p>
+        </div>
+        <div class="page-footer__applications">
+          <p class="page-footer__get-app-text">
+            Get the App
+          </p>
+            <ul class="page-footer__downloads-list">
+              <li class="page-footer__downloads-item">
+                <a class="badge" href="#" title="App Store Dowload Badge">
                   <img src="img\badges\app-store-badge.svg" alt="Скачать в App Store">
                 </a>
               </li>
-              <li>
-                <a href="#" title="Google Play Dowload Badge">
+              <li class="page-footer__downloads-item">
+                <a class="badge" href="#" title="Google Play Dowload Badge">
                   <img src="img\badges\google-play-badge.svg" alt="Скачать в Google Play">
                 </a>
               </li>
             </ul>
-        </div>
-      </div>
-    </footer>
-
+         </div>
+       </div>
+     </footer>
   </body>
 </html>

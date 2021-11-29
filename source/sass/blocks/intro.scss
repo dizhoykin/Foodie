@@ -1,14 +1,14 @@
 // .intro {
-//   background-image: url("../img/decoration/back-mobile.jpg");
+//   background-image: url("../img/decoration/background.jpg");
 //
-//   @supports (background-image: url("../img/decoration/back-mobile.webp")) {
-//     background-image: url("../img/decoration/back-mobile.webp");
+//   @supports (background-image: url("../img/decoration/background.webp")) {
+//     background-image: url("../img/decoration/background.webp");
 //   }
 //
-//   background-color: $accent_grey;
+//   background-color: $opacity-black;
 //   background-repeat: no-repeat;
 //   background-size: 100% auto;
-//   padding-top: 90px;
+//   // opacity: 0.7;
 // }
 //
 // @media (min-resolution: 2dppx) {

@@ -1,14 +1,12 @@
-// .page-header--index {
-//   background-position: 50%  0;
-//   margin-top: 1px;
-// }
+// .header {
+//   background-image: url("../img/decoration/background.jpg");
 //
-// .page-header--inner {
-//   background-position: center top 0;
-// }
-//
-// @media (min-width: $desktop-width) {
-//   .page-header--inner {
-//     min-height: 392px;
+//   @supports (background-image: url("../img/decoration/background.webp")) {
+//     background-image: url("../img/decoration/background.webp");
 //   }
+//
+//   // background-color: $opacity-black;
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   padding-bottom: 386px;
 // }

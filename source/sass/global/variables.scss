@@ -1,45 +1,35 @@
-// // Viewports
-//
-// $tablet-width: 660px;
-// $desktop-width: 1200px;
-//
-// // Colors
-//
-// $basic_black: rgba(0, 0, 0, 1);
-// $opacity_black: rgba(0, 0, 0, 0.3);
-//
-// $light_grey: rgba(242, 242, 242, 1);
-// $dark_grey: rgba(40, 54, 69, 1);
-// $dark_opacity-grey: rgba(40, 54, 69, 0.1);
-//
-// $accent_grey: rgba(29, 38, 49, 1);
-// $border_grey: rgba(229, 229, 229, 1);
-//
-// $accent_red: rgba(210, 40, 86, 1);
-// $opacity_red: rgba(210, 40, 86, 0.3);
-//
-// $basic_green: rgba(42, 171, 109, 1);
-// $action_green: rgba(28, 155, 94, 1);
-//
-// $basic_white: rgba(255, 255, 255, 1);
-// $shadow_white: rgba(255, 255, 255, 0.15);
-// $opacity_white: rgba(255, 255, 255, 0.3);
-//
-// // Fonts
-//
-// $basic_font-size: 14px;
-// $basic_line-height: 24px;
-//
-// $tagline_font-size: 24px;
-// $tagline_line-height-index: 120%;
-// $tagline_line-height-inner: 33px;
-//
-// // font-weight
-//
-// $light: 300;
-// $regular: 400;
-// $bold: 700;
-//
-// // font-family
-//
-// $basic_font_family: "Open Sans", "Arial", sans-serif;
+// Colors
+
+$basic_black: rgba(0, 0, 0, 1);
+$opacity-black: rgba(0, 0, 0, 0.7);
+
+$basic_white: rgba(255, 255, 255, 1);
+
+$basic_gray: rgba(244, 245, 247, 1);
+$text-gray: rgba(102, 102, 102, 1);
+$arrow_grey: rgba(147, 147, 147, 1);
+$subtitle_grey: rgba(24, 25, 31, 1);
+$cite_grey: rgba(71, 74, 87, 1);
+$undertext_grey: rgba(217, 219, 225, 1);
+
+$basic_orange: rgba(254, 114, 76, 1);
+
+// Fonts
+
+$basic_font-size: 16px;
+$basic_line-height: 28px;
+
+$tagline_font-size: 40px;
+$tagline_line-height-index: 22px;
+
+// font-weight
+
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// font-family
+
+$basic_font_family: "Roboto", "Arial", sans-serif;
+$tagline_font_family: "Montserrat", "Arial", sans-serif;

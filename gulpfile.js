@@ -133,25 +133,33 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-// Copy for build
+// Copy scripts for build
 
-const copy = (done) => {
+const copyScripts = (done) => {
   gulp.src([
     "source/js/script.js",
-    "source/fonts/*.{woff2,woff}",
-    "source/img/favicon/favicon.ico",
-    "source/img/favicon/manifest.webmanifest",
-    "source/img/**/*.{*.svg}"
-  ],
-    {"allowEmpty": true},
-  {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"))
+    ],
+    {"allowEmpty": true}
+  )
+  .pipe(gulp.dest("build/js"))
   done();
 }
 
-exports.copy = copy;
+exports.copyScripts = copyScripts;
+
+// Copy fonts for Build
+
+const copyFonts = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}"
+  ],
+    {"allowEmpty": true}
+  )
+  .pipe(gulp.dest("build/fonts"))
+  done();
+}
+
+exports.copyFonts = copyFonts;
 
 // Clean for build
 
@@ -165,7 +173,8 @@ exports.clean = clean;
 
 const build = gulp.series(
   clean,
-  copy,
+  copyFonts,
+  copyScripts,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -183,7 +192,8 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  copy,
+  copyFonts,
+  copyScripts,
   copyImages,
   gulp.parallel(
     styles,

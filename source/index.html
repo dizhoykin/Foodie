@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
-    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
-    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
-    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
     <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+
   </head>
 
   <body class="page">
-    <header class="page-header">
 
+    <header class="page-header">
       <a class="logo">
-        <img class="logo__image logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156px" height="38px">
+        <img class="logo__image logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156" height="38">
       </a>
 
       <nav class="main-nav">
@@ -132,13 +133,22 @@
           </h2>
           <ul class="screenshots__list slider__list">
             <li class="screenshots__item slider__item">
-              <img src="img\mockups\phone-promo@1x.png" alt="Promo Screen" width="290px" height="579px">
+              <picture class="screenshots__image-container">
+                <source type="image/webp" srcset="img\mockups\phone-promo@1x.webp 1x, img\mockups\phone-promo@2x.webp 2x">
+                <img class="screenshots__image" src="img\mockups\phone-promo@1x.png" srcset="img\mockups\phone-promo@2x.png 2x" alt="Promo Screen" width="290" height="579">
+              </picture>
             </li>
             <li class="screenshots__item slider__item">
-              <img src="img\mockups\phone-menu@1x.png" alt="Menu Screen" width="290px" height="579px">
+              <picture  class="screenshots__image-container">
+                <source type="image/webp" srcset="img\mockups\phone-menu@1x.webp 1x, img\mockups\phone-menu@2x.webp 2x">
+                <img class="screenshots__image" src="img\mockups\phone-menu@1x.png" srcset="img\mockups\phone-menu@2x.png 2x" alt="Menu Screen" width="290" height="579">
+              </picture>
             </li>
             <li class="screenshots__item slider__item">
-              <img src="img\mockups\phone-product@1x.png" alt="Product Screen" width="290px" height="579px">
+              <picture class="screenshots__image-container">
+                <source type="image/webp" srcset="img\mockups\phone-product@1x.webp 1x, img\mockups\phone-product@2x.webp 2x">
+                <img class="screenshots__image" src="img\mockups\phone-product@1x.png" srcset="img\mockups\phone-product@2x.png 2x" alt="Menu Screen" width="290" height="579">
+              </picture>
             </li>
           </ul>
           <p class="screenshots__toggles slider__toggles">
@@ -169,7 +179,10 @@
                 <p class="reviews__text">
                   Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
                 </p>
-                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <picture class="reviews__avatar-container">
+                  <source type="image/webp" srcset="img\reviews\avatar@1x.webp 1x, img\reviews\avatar@2x.webp 2x">
+                  <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" srcset="img\reviews\avatar@2x.jpg 2x" alt="Author's Avatar" width="56" height="56">
+                </picture>
                 <cite class="reviews__author">
                   Jane Cooper
                 </cite>
@@ -186,7 +199,10 @@
                 <p class="reviews__text">
                   Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
                 </p>
-                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <picture class="reviews__avatar-container">
+                  <source type="image/webp" srcset="img\reviews\avatar@1x.webp 1x, img\reviews\avatar@2x.webp 2x">
+                  <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" srcset="img\reviews\avatar@2x.jpg 2x" alt="Author's Avatar" width="56" height="56">
+                </picture>
                 <cite class="reviews__author">
                   Jane Cooper
                 </cite>
@@ -203,7 +219,10 @@
                 <p class="reviews__text">
                   Had really great experience with myresfeber, service is really good and everything is just awesome. Great recommendations and bookings were available at a discounted price. Awesome!
                 </p>
-                <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" alt="Author's Avatar" width="56px" height="56px">
+                <picture class="reviews__avatar-container">
+                  <source type="image/webp" srcset="img\reviews\avatar@1x.webp 1x, img\reviews\avatar@2x.webp 2x">
+                  <img class="reviews__avatar" src="img\reviews\avatar@1x.jpg" srcset="img\reviews\avatar@2x.jpg 2x" alt="Author's Avatar" width="56" height="56">
+                </picture>
                 <cite class="reviews__author">
                   Jane Cooper
                 </cite>
@@ -232,7 +251,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="logo">
-          <img class="logo__image logo__image--footer" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="138px" height="24px">
+          <img class="logo__image logo__image--footer" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="138" height="24">
         </a>
         <div class="page-footer__menu">
           <ul class="site-list site-list--footer">

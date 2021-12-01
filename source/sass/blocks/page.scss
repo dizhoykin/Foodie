@@ -1,85 +1,11 @@
-// .page {
-//   min-height: 100%;
-//
-//   // font-family: $basic_font_family;
-//   // font-size: $basic_font-size;
-//   // line-height: $basic_line-height;
-//   // font-weight: $regular;
-//   // color: $dark_grey;
-//   // font-style: normal;
-//
-//   margin: 0 auto;
-// }
-// //
-// // .page__text {
-// //   line-height: 30px;
-// //   text-align: center;
-// // }
-// //
-// // .page__text--top-form {
-// //   margin-top: 44px;
-// //   margin-bottom: 31px;
-// //   width: 280px;
-// // }
-// //
-// // .page__text--top-catalog {
-// //   margin-top: 44px;
-// //   margin-bottom: 50px;
-// //   width: 253px;
-// //   font-size: 14px;
-// // }
-// //
-// // .page__text--bottom {
-// //   margin-top: 44px;
-// //   margin-bottom: 41px;
-// //   width: 280px;
-// //   margin-left: auto;
-// //   margin-right: auto;
-// // }
-// //
-// // .page__invite {
-// //   display: none;
-// // }
-// //
-// // @media (min-width: $tablet-width) {
-// //   .page__text--top-form {
-// //     font-size: 18px;
-// //
-// //     margin-top: 91px;
-// //     margin-bottom: 72px;
-// //
-// //     width: 490px;
-// //   }
-// //
-// //   .page__text--bottom {
-// //     font-size: 18px;
-// //     width: 620px;
-// //     margin-bottom: 70px;
-// //   }
-// //
-// //   .page__text--top-catalog {
-// //     width: 571px;
-// //     margin-top: 91px;
-// //     margin-bottom: 77px;
-// //     font-size: 18px;
-// //   }
-// //
-// //   .page__invite {
-// //     display: inline;
-// //   }
-// // }
-// //
-// // @media (min-width: $desktop-width) {
-// //   .page__text--top-form {
-// //     width: 760px;
-// //   }
-// //
-// //   .page__text--top-catalog {
-// //     margin-bottom: 88px;
-// //   }
-// //
-// //   .page__text--bottom {
-// //     margin-top: 4px;
-// //     margin-bottom: 67px;
-// //   }
-// // }
+.page {
+  min-width: 1260px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: $basic_font-size;
+  line-height: $basic_line-height;
+  font-weight: $regular;
+  color: $basic_black;
+  background-color: $basic_white;
+}

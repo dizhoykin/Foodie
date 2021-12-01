@@ -16,38 +16,36 @@
 
   </head>
 
-  <body class="page">
-
+  <body class="page-body">
     <header class="page-header">
-      <a class="logo">
-        <img class="logo__image logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156" height="38">
-      </a>
-
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="wrapper">
+          <a class="logo">
+            <img class="logo__image logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156" height="38">
+          </a>
           <ul class="main-nav__list site-list site-list--header">
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Home
               </a>
             </li>
             <li class="site-list__item site-list__item--header">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 About Us
               </a>
             </li>
             <li class="site-list__item site-list__item--header">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 How It Works
               </a>
             </li>
             <li class="site-list__item site-list__item--header">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Screenshots
               </a>
             </li>
             <li class="site-list__item site-list__item--header">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Testimonials
               </a>
             </li>
@@ -62,9 +60,9 @@
 
       <section class="promo">
         <h1 class="visually-hidden">App "Foodie"</h1>
-        <div class="promo__wrapper">
-          <h2>Awesome App for Your Modern Lifestyle</h2>
-          <p>
+        <div class="wrapper">
+          <h2 class="promo__tagline">Awesome App for Your Modern Lifestyle</h2>
+          <p class="promo__text">
             We'll help you make your plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more.
           </p>
           <div class="promo__platforms">
@@ -82,26 +80,46 @@
     <main class="page-main">
 
       <section class="intro">
-        <div class="intro__wrapper">
-          <h2>About Us</h2>
-          <p>
-            Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
-          </p>
-          <p>
-            We consist of a constantly growing community of local experts showcasing a range of curated content around events, food, shopping, fashion, sightseeing, local communities, travel and so much more!We'll help you make your weekend plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more. Here's a little taste of the plethora of features we offer -You will happily receive expert recommendations   tailor-made to suit your interests. We'll be providing you with city-specific stories and videos, handy local information - all right on your smartphone, ready to be scrolled through!We'll be updating and pushing through fresh content every few hours, giving you more than enough time to scan through and make plans to explore your city.You can also like, share and bookmark all your favorite articles and blurbs, and store them ready for future lookups!We pride ourselves on being one of the fastest-loading apps out there today so that you'll have a seamless browsing experience.With all this and more, all fresh and ready for you guys, this is one platform that'll become your lifeline to navigate all corners of your city. Explore away!
-          </p>
+        <div class="wrapper">
+          <div class="intro__photo-container">
+            <picture class="intro__photo">
+              <source type="image/webp" srcset="img\context\photo-greens@1x.webp 1x, img\context\photo-greens@2x.webp 2x">
+              <img class="intro__image" src="img\context\photo-greens@1x.png" srcset="img\context\photo-greens@2x.png 2x" alt="Greens" width="250" height="334">
+            </picture>
+            <picture class="intro__photo">
+              <source type="image/webp" srcset="img\context\photo-salad@1x.webp 1x, img\context\photo-salad@2x.webp 2x">
+              <img class="intro__image" src="img\context\photo-salad@1x.png" srcset="img\context\photo-salad@2x.png 2x" alt="Greens" width="270" height="270">
+            </picture>
+            <picture class="intro__photo">
+              <source type="image/webp" srcset="img\context\photo-dessert@1x.webp 1x, img\context\photo-dessert@2x.webp 2x">
+              <img class="intro__image" src="img\context\photo-dessert@1x.png" srcset="img\context\photo-dessert@2x.png 2x" alt="Greens" width="164" height="285">
+            </picture>
+            <picture class="intro__photo">
+              <source type="image/webp" srcset="img\context\photo-entree@1x.webp 1x, img\context\photo-entree@2x.webp 2x">
+              <img class="intro__image" src="img\context\photo-entree@1x.png" srcset="img\context\photo-entree@2x.png 2x" alt="Greens" width="356" height="356">
+            </picture>
+          </div>
+          <div class="intro__text-container">
+            <h2 class="intro__tagline header">About Us</h2>
+            <p class="intro__lead">
+              Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
+            </p>
+            <p class="intro__text">
+              We consist of a constantly growing community of local experts showcasing a range of curated content around events, food, shopping, fashion, sightseeing, local communities, travel and so much more!We'll help you make your weekend plans, inform you about the best events happening all around the world, tell you all about the best places to eat in the city and much much more. Here's a little taste of the plethora of features we offer -You will happily receive expert recommendations   tailor-made to suit your interests. We'll be providing you with city-specific stories and videos, handy local information - all right on your smartphone, ready to be scrolled through!We'll be updating and pushing through fresh content every few hours, giving you more than enough time to scan through and make plans to explore your city.You can also like, share and bookmark all your favorite articles and blurbs, and store them ready for future lookups!We pride ourselves on being one of the fastest-loading apps out there today so that you'll have a seamless browsing experience.With all this and more, all fresh and ready for you guys, this is one platform that'll become your lifeline to navigate all corners of your city. Explore away!
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="actions">
-        <div class="actions__wrapper">
-          <h2>How does this App Work?</h2>
+        <div class="wrapper">
+          <h2 class="actions__tagline header">How does this App Work?</h2>
             <ul class="actions__list">
               <li class="actions__item">
                 <p class="actions__tagline">
                   Make a profile
                 </p>
-                <p>
+                <p class="actions__text">
                   Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
                 </p>
               </li>
@@ -109,7 +127,7 @@
                 <p class="actions__tagline">
                   Download it for Free
                 </p>
-                <p>
+                <p class="actions__text">
                   Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
                 </p>
               </li>
@@ -117,7 +135,7 @@
                 <p class="actions__tagline">
                   Enjoy this App
                 </p>
-                <p>
+                <p class="actions__text">
                   Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
                 </p>
               </li>
@@ -126,8 +144,8 @@
       </section>
 
       <section class="screenshots">
-        <div class="screenshots__wrapper slider">
-          <h2>
+        <div class="wrapper slider">
+          <h2 class="screenshots__tagline header">
             Screenshots
           </h2>
           <ul class="screenshots__list slider__list">
@@ -162,17 +180,17 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2>
+        <div class=" slider">
+          <h2 class="reviews__tagline header">
             Our Clients Speak
           </h2>
-          <p>
+          <p class="reviews__lead">
             We have been working with clients around the world
           </p>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <blockquote class="reviews__blockquote">
-                <h3 class="reviews__tagline">
+                <h3 class="reviews__header">
                   Efficient Collaborating
                 </h3>
                 <p class="reviews__text">
@@ -192,7 +210,7 @@
             </li>
             <li class="reviews__item slider__item">
               <blockquote class="reviews__blockquote">
-                <h3 class="reviews__tagline">
+                <h3 class="reviews__header">
                   Intuitive Design
                 </h3>
                 <p class="reviews__text">
@@ -212,7 +230,7 @@
             </li>
             <li class="reviews__item slider__item">
               <blockquote class="reviews__blockquote">
-                <h3 class="reviews__tagline">
+                <h3 class="reviews__header">
                   Mindblowing Service
                 </h3>
                 <p class="reviews__text">
@@ -248,34 +266,34 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="wrapper">
         <a class="logo">
           <img class="logo__image logo__image--footer" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="138" height="24">
         </a>
         <div class="page-footer__menu">
           <ul class="site-list site-list--footer">
             <li class="site-list__item site-list__item--footer">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 About
               </a>
             </li>
             <li class="site-list__item site-list__item--footer">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 How it works
               </a>
             </li>
             <li class="site-list__item site-list__item--footer">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Contact Us
               </a>
             </li>
             <li class="site-list__item site-list__item--footer">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Help
               </a>
             </li>
             <li class="site-list__item site-list__item--footer">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Privacy Policy
               </a>
             </li>
@@ -288,15 +306,15 @@
           <p class="page-footer__get-app-text">
             Get the App
           </p>
-            <ul class="page-footer__downloads-list">
-              <li class="page-footer__downloads-item">
+            <ul class="page-footer__downloads-list site-list">
+              <li class="page-footer__downloads-item site-list__item">
                 <a class="badge" href="#" title="App Store Dowload Badge">
-                  <img src="img\badges\app-store-badge.svg" alt="Скачать в App Store">
+                  <img src="img\badges\app-store-badge.svg" alt="Скачать в App Store" width="135" height="40">
                 </a>
               </li>
               <li class="page-footer__downloads-item">
                 <a class="badge" href="#" title="Google Play Dowload Badge">
-                  <img src="img\badges\google-play-badge.svg" alt="Скачать в Google Play">
+                  <img src="img\badges\google-play-badge.svg" alt="Скачать в Google Play" width="135" height="40">
                 </a>
               </li>
             </ul>

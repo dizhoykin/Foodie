@@ -1,1 +1,19 @@
-// Здесь будет код...
+.actions {
+  background-color: $basic_orange;
+}
+
+.actions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.actions__tagline,
+.actions__text {
+  color: $basic_white;
+}
+
+.actions__tagline {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+}

@@ -1,0 +1,18 @@
+.page-footer {
+  background-color: $basic_black;
+}
+
+.page-footer__menu {
+  line-height: 26px;
+}
+
+.page-footer__get-app-text {
+  font-size: 18px;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: $medium;
+  color: $undertext_grey;
+}
+
+.page-footer__downloads-list {
+  list-style: none;
+}

@@ -1,12 +1,6 @@
-// .header {
-//   background-image: url("../img/decoration/background.jpg");
-//
-//   @supports (background-image: url("../img/decoration/background.webp")) {
-//     background-image: url("../img/decoration/background.webp");
-//   }
-//
-//   // background-color: $opacity-black;
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   padding-bottom: 386px;
-// }
+.header {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: $tagline_font-size;
+  line-height: $tagline_line-height-index;
+  font-weight: $bold;
+}

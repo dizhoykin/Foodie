@@ -1,13 +1,20 @@
-//
-// .promo {
-//   background-image: url("../img/decoration/background.jpg");
-//
-//   @supports (background-image: url("../img/decoration/background.webp")) {
-//     background-image: url("../img/decoration/background.webp");
-//   }
-//
-//   background-color: $opacity-black;
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   background-position: 50% 0;
-// }
+.promo__tagline {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 46px;
+  font-weight: $bold;
+  line-height: 54px;
+  color: $basic_white;
+}
+
+.promo__text {
+  font-size: 17px;
+  line-height: 23px;
+  color: $basic_white;
+}
+
+.promo__platform-item {
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic_white;
+  font-weight: $medium;
+}

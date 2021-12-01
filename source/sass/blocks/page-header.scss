@@ -1,3 +1,22 @@
 .page-header {
   background-color: $basic_black;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+
+  background-image: url("../img/decoration/background@1x.jpg");
+
+  @supports (background-image: url("../img/decoration/background@1x.webp")) {
+    background-image: url("../img/decoration/background@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decoration/background@2x.jpg");
+
+    @supports (background-image: url("../img/decoration/background@2x.webp")) {
+      background-image: url("../img/decoration/background@2x.webp");
+    }
+  }
+
+  margin-bottom: 73px;
 }

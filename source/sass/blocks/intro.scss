@@ -1,3 +1,28 @@
+.intro__wrapper {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.intro__text-container {
+  min-width: 600px;
+}
+
+.intro__photo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 540px;
+}
+
+.intro__photo {
+  margin: 0;
+  padding: 0;
+}
+
 .intro__lead {
   font-weight: $bold;
 }

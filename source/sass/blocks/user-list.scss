@@ -1,4 +1,9 @@
 .user-list__login {
   color: $basic_orange;
   line-height: 22px;
+
+  display: block;
+  padding: 15px 48px;
+  background-color: $basic_white;
+  border-radius: 100px;
 }

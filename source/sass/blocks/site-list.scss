@@ -18,8 +18,16 @@
   padding-right: 0;
 }
 
+.site-list--header {
+
+  padding-left: 365px;
+  padding-right: 26px;
+
+  justify-content: flex-end;
+}
+
 .site-list__item--header {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .site-list__item--footer {

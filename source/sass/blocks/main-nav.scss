@@ -8,11 +8,14 @@
 }
 
 .main-nav__wrapper {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
 
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.main-nav__list {
+  align-self: center;
 }

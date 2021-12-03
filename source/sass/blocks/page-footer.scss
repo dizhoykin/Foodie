@@ -1,15 +1,25 @@
 .page-footer {
   background-color: $basic_black;
+
+  padding-top: 86px;
+  padding-bottom: 55px;
 }
 
 .page-footer__wrapper {
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .page-footer__menu {
   line-height: 26px;
+}
+
+.page-footer__applications {
+  padding-left: 316px;
 }
 
 .page-footer__get-app-text {

@@ -1,13 +1,18 @@
-.promo {
+.promo__wrapper {
+  width: 1180px;
   background-image: url("../img/mockups/phone-menu@1x.png");
+
   background-repeat: no-repeat;
   background-position: right top;
-  padding-bottom: 446px;
+  background-size: auto;
+
+  padding-bottom: 296px;
+  margin: 0 auto;
 }
 
-.promo__wrapper {
-  width: 665px;
-  padding: 0 40px;
+.promo__container {
+  max-width: 585px;
+  padding-top: 139px;
 }
 
 .promo__tagline {

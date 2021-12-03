@@ -1,11 +1,27 @@
+.reviews {
+  background-color: $basic_grey;
+
+  padding-bottom: 74px;
+}
+
 .reviews__wrapper {
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+.reviews__content {
+  width: 350px;
+  background-color: $basic_white;
+
+  padding: 20px 40px;
+
+  margin-bottom: 16px;
+}
+
 .reviews__tagline {
   line-height: 56px;
+  padding-top: 54px;
 }
 
 .reviews__tagline,
@@ -64,4 +80,5 @@
 
 .reviews__toggles {
   text-align: center;
+  margin: 0;
 }

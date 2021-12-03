@@ -1,16 +1,48 @@
 .actions {
   background-color: $basic_orange;
+
+  margin-bottom: 80px;
 }
 
 .actions__wrapper {
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
+
+  background-image: url("../img/mockups/phone-product@1x.png");
+
+  @supports (background-image: url("../img/mockups/phone-product@1x.webp")) {
+    background-image: url("../img/mockups/phone-product@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mockups/phone-product@2x.png");
+
+    @supports (background-image: url("../img/mockups/phone-product@2x.webp")) {
+      background-image: url("../img/mockups/phone-product@2x.webp");
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: auto;
+
+  padding-bottom: 156px;
+}
+
+.actions__container {
+  max-width: 744px;
+  padding-top: 90px;
 }
 
 .actions__list {
   list-style: none;
   padding: 0;
+  padding-top: 126px;
+}
+
+.actions__item {
+  padding-left: 144px;
 }
 
 .actions__tagline,
@@ -22,4 +54,8 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 20px;
   line-height: 22px;
+}
+
+.actions__text {
+  margin-bottom: 65px;
 }

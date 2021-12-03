@@ -1,7 +1,7 @@
 .page-header {
   background-color: $basic_black;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 100% 0;
   background-size: cover;
 
   background-image: url("../img/decoration/background@1x.jpg");
@@ -19,4 +19,16 @@
   }
 
   margin-bottom: 73px;
+}
+
+.page-header__wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__container {
+  background-image: url("../img/decoration/circle.svg");
+  background-repeat: no-repeat;
+  background-position: 605px -325px;
 }

@@ -2,17 +2,30 @@
   width: 1180px;
   background-image: url("../img/mockups/phone-menu@1x.png");
 
+  @supports (background-image: url("../img/mockups/phone-menu@1x.webp")) {
+    background-image: url("../img/mockups/phone-menu@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mockups/phone-menu@2x.png");
+
+    @supports (background-image: url("../img/mockups/phone-menu@2x.webp")) {
+      background-image: url("../img/mockups/phone-menu@1x.webp");
+    }
+  }
+
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 770px 0;
   background-size: auto;
 
-  padding-bottom: 296px;
+  padding-bottom: 242px;
   margin: 0 auto;
 }
 
 .promo__container {
   max-width: 585px;
-  padding-top: 139px;
+  padding-top: 101px;
+  padding-left: 31px;
 }
 
 .promo__tagline {
@@ -21,17 +34,71 @@
   font-weight: $bold;
   line-height: 54px;
   color: $basic_white;
+  margin-bottom: 27px;
 }
 
 .promo__text {
   font-size: 17px;
   line-height: 23px;
   color: $basic_white;
+  margin-bottom: 39px;
 }
 
-.promo__platform-item {
+.promo__platforms-list {
+  display: flex;
+}
+
+.promo__platforms-item {
   font-size: 17px;
   line-height: 20px;
   color: $basic_white;
   font-weight: $medium;
+
+  margin-right: 16px;
+}
+
+.promo__platforms-link {
+  display: block;
+  color: $basic_white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  position: relative;
+
+  &:hover,
+  &:active {
+    background-color: $basic_orange;
+    border-color: $basic_orange;
+  }
+
+  &::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+  }
+}
+
+.promo__platforms-link--apple {
+  padding-left: 59px;
+  padding-right: 40px;
+
+  &::before {
+    background-image: url("../img/icons/app-store.svg");
+    top: 14px;
+    left: 28px;
+  }
+}
+
+.promo__platforms-link--google {
+  padding-left: 53px;
+  padding-right: 30px;
+
+  &::before {
+    background-image: url("../img/icons/google-play.svg");
+    top: 15px;
+    left: 22px;
+  }
 }

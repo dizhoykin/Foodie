@@ -22,32 +22,32 @@
         <div class="page-header__container">
           <nav class="main-nav">
             <div class="main-nav__wrapper">
-              <a class="logo">
+              <a class="logo" focusable="true">
                 <img class="logo__image  logo__image--header" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="156" height="38">
               </a>
               <ul class="main-nav__list site-list site-list--header">
                 <li class="site-list__item  site-list__item--header">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="index.html">
                     Home
                   </a>
                 </li>
                 <li class="site-list__item site-list__item--header">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#about_us">
                     About Us
                   </a>
                 </li>
                 <li class="site-list__item site-list__item--header">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#how_it_works">
                     How It Works
                   </a>
                 </li>
                 <li class="site-list__item site-list__item--header">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#screenshots">
                     Screenshots
                   </a>
                 </li>
                 <li class="site-list__item site-list__item--header">
-                  <a class="site-list__link" href="#">
+                  <a class="site-list__link" href="#reviews">
                     Testimonials
                   </a>
                 </li>
@@ -69,12 +69,12 @@
                 </p>
                 <ul class="site-list promo__platforms-list">
                   <li class="promo__platforms-item">
-                    <a class="promo__platforms-link promo__platforms-link--apple button" href="#">
+                    <a class="promo__platforms-link promo__platforms-link--apple button" href="https://www.apple.com/ru/app-store/">
                       App Store
                     </a>
                   </li>
                   <li class="promo__platforms-item">
-                    <a class="promo__platforms-link promo__platforms-link--google button" href="#">
+                    <a class="promo__platforms-link promo__platforms-link--google button" href="https://play.google.com/">
                       Google Play
                     </a>
                   </li>
@@ -109,7 +109,7 @@
             </picture>
           </div>
           <div class="intro__text-container">
-            <h2 class="intro__tagline header">About Us</h2>
+            <h2 class="intro__tagline header" id="about_us">About Us</h2>
             <p class="intro__lead">
               Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
             </p>
@@ -123,26 +123,26 @@
       <section class="actions">
         <div class="actions__wrapper">
           <div class="actions__container">
-            <h2 class="actions__tagline header">How does this App Work?</h2>
+            <h2 class="actions__tagline header" id="how_it_works">How does this App Work?</h2>
             <ul class="actions__list">
-              <li class="actions__item">
-                <p class="actions__tagline">
+              <li class="actions__item actions__item--user">
+                <p class="actions__subtagline">
                   Make a profile
                 </p>
                 <p class="actions__text">
                   Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
                 </p>
               </li>
-              <li class="actions__item">
-                <p class="actions__tagline">
+              <li class="actions__item actions__item--download">
+                <p class="actions__subtagline">
                   Download it for Free
                 </p>
                 <p class="actions__text">
                   Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore hidden gems and be the first to get the latest buzz!
                 </p>
               </li>
-              <li class="actions__item">
-                <p class="actions__tagline">
+              <li class="actions__item  actions__item--enjoy">
+                <p class="actions__subtagline">
                   Enjoy this App
                 </p>
                 <p class="actions__text">
@@ -156,35 +156,33 @@
 
       <section class="screenshots">
         <div class="screenshots__wrapper slider">
-          <h2 class="screenshots__tagline header">
+          <h2 class="screenshots__tagline header" id="screenshots">
             Screenshots
           </h2>
           <ul class="screenshots__list slider__list">
             <li class="screenshots__item slider__item">
               <picture class="screenshots__image-container">
                 <source type="image/webp" srcset="img\mockups\phone-promo@1x.webp 1x, img\mockups\phone-promo@2x.webp 2x">
-                <img class="screenshots__image" src="img\mockups\phone-promo@1x.png" srcset="img\mockups\phone-promo@2x.png 2x" alt="Promo Screen" width="290" height="579">
+                <img class="screenshots__image" src="img\mockups\phone-promo@1x.png" srcset="img\mockups\phone-promo@2x.png 2x" alt="Promo Screen" width="289" height="579">
               </picture>
             </li>
             <li class="screenshots__item slider__item">
               <picture  class="screenshots__image-container">
                 <source type="image/webp" srcset="img\mockups\phone-menu@1x.webp 1x, img\mockups\phone-menu@2x.webp 2x">
-                <img class="screenshots__image" src="img\mockups\phone-menu@1x.png" srcset="img\mockups\phone-menu@2x.png 2x" alt="Menu Screen" width="290" height="579">
+                <img class="screenshots__image" src="img\mockups\phone-menu@1x.png" srcset="img\mockups\phone-menu@2x.png 2x" alt="Menu Screen" width="289" height="579">
               </picture>
             </li>
             <li class="screenshots__item slider__item">
               <picture class="screenshots__image-container">
                 <source type="image/webp" srcset="img\mockups\phone-product@1x.webp 1x, img\mockups\phone-product@2x.webp 2x">
-                <img class="screenshots__image" src="img\mockups\phone-product@1x.png" srcset="img\mockups\phone-product@2x.png 2x" alt="Menu Screen" width="290" height="579">
+                <img class="screenshots__image" src="img\mockups\phone-product@1x.png" srcset="img\mockups\phone-product@2x.png 2x" alt="Menu Screen" width="289" height="579">
               </picture>
             </li>
           </ul>
           <p class="screenshots__toggles slider__toggles">
-            <button class="slider__toggle" type="button">
-              left
+            <button class="screenshots__toggle screenshots__toggle--left slider__toggle" type="button" aria-label="Left">
             </button>
-            <button class="slider__toggle" type="button">
-              right
+            <button class="screenshots__toggle screenshots__toggle--right slider__toggle" type="button" aria-label="Right">
             </button>
           </p>
         </div>
@@ -192,7 +190,7 @@
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__tagline header">
+          <h2 class="reviews__tagline header" id="reviews">
             Our Clients Speak
           </h2>
           <p class="reviews__lead">
@@ -266,17 +264,20 @@
               </blockquote>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="reviews__toggle slider__toggle" type="button">
-              1
+          <ul class="reviews__toggles-list slider__toggles">
+            <li class="reviews__toggles-item">
+              <button class="reviews__toggle slider__toggle" type="button" aria-label="First Review">
+              </button>
+          </li>
+          <li class="reviews__toggles-item">
+            <button class="reviews__toggle reviews__toggle--current slider__toggle" type="button" aria-label="Second Review">
             </button>
-            <button class="reviews__toggle reviews__toggle--current slider__toggle" type="button">
-              2
+          </li>
+          <li class="reviews__toggles-item">
+            <button class="reviews__toggle slider__toggle" type="button" aria-label="Third Review">
             </button>
-            <button class="reviews__toggle slider__toggle" type="button">
-              3
-            </button>
-          </p>
+          </li>
+          </ul>
         </div>
       </section>
 
@@ -285,17 +286,17 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__menu">
-          <a class="logo">
+          <a class="logo" focusable="true">
             <img class="logo__image logo__image--footer" src="img\logo\logo.svg" alt="Логотип сайта Foodie" width="138" height="24">
           </a>
           <ul class="site-list site-list--footer">
             <li class="site-list__item site-list__item--footer">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="#about_us">
                 About
               </a>
             </li>
             <li class="site-list__item site-list__item--footer">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="#how_it_works">
                 How it works
               </a>
             </li>
@@ -325,12 +326,12 @@
           </p>
             <ul class="page-footer__downloads-list site-list">
               <li class="page-footer__downloads-item site-list__item">
-                <a class="badge" href="#" title="App Store Dowload Badge">
+                <a class="badge" href="https://www.apple.com/ru/app-store/" title="App Store Dowload Badge">
                   <img src="img\badges\app-store-badge.svg" alt="Скачать в App Store" width="135" height="40">
                 </a>
               </li>
               <li class="page-footer__downloads-item">
-                <a class="badge" href="#" title="Google Play Dowload Badge">
+                <a class="badge" href="https://play.google.com/" title="Google Play Dowload Badge">
                   <img src="img\badges\google-play-badge.svg" alt="Скачать в Google Play" width="135" height="40">
                 </a>
               </li>

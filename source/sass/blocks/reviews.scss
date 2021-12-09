@@ -1,27 +1,42 @@
 .reviews {
   background-color: $basic_grey;
 
-  padding-bottom: 74px;
+  padding-bottom: 101px;
 }
 
 .reviews__wrapper {
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
+
+  position: relative;
 }
 
 .reviews__content {
-  width: 350px;
+  max-width: 350px;
   background-color: $basic_white;
+  margin-bottom: 29px;
+  border-radius: 10px;
+  position: relative;
 
-  padding: 20px 40px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decoration/triangle.svg");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 24px;
+    fill: $basic_white;
+    top: 181px;
+    left: 168px;
 
-  margin-bottom: 16px;
+    transform: rotate(-45deg);
+  }
 }
 
 .reviews__tagline {
   line-height: 56px;
-  padding-top: 54px;
+  padding-top: 58px;
 }
 
 .reviews__tagline,
@@ -34,11 +49,14 @@
   font-size: 18px;
   line-height: 32px;
   color: $subtitle_grey;
+  margin-bottom: 12px;
 }
 
 .reviews__header,
 .reviews__text {
   color: $subtitle_grey;
+  padding-left: 25px;
+  padding-right: 22px;
 }
 
 .reviews__header {
@@ -46,19 +64,30 @@
   font-weight: $semibold;
   font-size: 22px;
   line-height: 32px;
+  padding-top: 23px;
+  margin-bottom: 0;
 }
 
 .reviews__list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0 74px;
 }
 
 .reviews__item {
   text-align: center;
 }
 
+.reviews__blockquote {
+  margin: 0;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 24px;
+  padding-bottom: 9px;
+  margin-top: 9px;
 }
 
 .reviews__author,
@@ -78,7 +107,35 @@
   font-style: normal;
 }
 
-.reviews__toggles {
-  text-align: center;
+.reviews__avatar {
+  border-radius: 50%;
+}
+
+.reviews__toggles-list {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 567px;
+  left: 48%;
+  width: 52px;
+}
+
+.reviews__toggle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: $basic_orange;
+  border: none;
+}
+
+.reviews__toggle--current {
+  width: 14px;
+  height: 14px;
+  border: 3px solid $basic_orange;
+  background-color: $basic_white;
 }

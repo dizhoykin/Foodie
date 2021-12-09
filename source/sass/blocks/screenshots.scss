@@ -1,5 +1,5 @@
 .screenshots {
-  padding-bottom: 74px;
+  padding-bottom: 50px;
 }
 
 .screenshots__wrapper {
@@ -11,8 +11,53 @@
 .screenshots__tagline {
   text-align: center;
   margin-bottom: 66px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 2px;
+    top: 44px;
+    left: 599px;
+    background-color: $basic_orange;
+    border: none;
+  }
 }
 
 .screenshots__list {
   list-style: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.screenshots__toggles {
+  margin: 0;
+  position: relative;
+}
+
+.screenshots__toggle {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $arrow_grey;
+  background-image: url("../img/icons/icon-arrow.svg");
+  background-size: 24px 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  bottom: 274px;
+}
+
+.screenshots__toggle--left {
+  left: 20px;
+}
+
+.screenshots__toggle--right {
+  transform: rotate(180deg);
+  right: 20px;
 }

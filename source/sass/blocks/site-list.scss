@@ -4,6 +4,7 @@
   margin: 0;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .site-list__link {
@@ -28,5 +29,5 @@
 }
 
 .site-list__item--footer {
-  padding: 0 24px;
+  padding: 0 12px;
 }

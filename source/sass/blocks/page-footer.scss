@@ -1,8 +1,8 @@
 .page-footer {
   background-color: $basic_black;
 
-  padding-top: 86px;
-  padding-bottom: 55px;
+  padding-top: 84px;
+  padding-bottom: 72px;
 }
 
 .page-footer__wrapper {
@@ -11,15 +11,18 @@
   padding: 0 10px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 500px;
 }
 
 .page-footer__menu {
   line-height: 26px;
+  padding-left: 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .page-footer__applications {
-  padding-left: 316px;
+  padding-left: 186px;
 }
 
 .page-footer__get-app-text {
@@ -27,8 +30,14 @@
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: $medium;
   color: $undertext_grey;
+  margin-top: 37px;
+  margin-bottom: 9px;
 }
 
 .page-footer__downloads-list {
   list-style: none;
+}
+
+.page-footer__downloads-item {
+  padding-right: 13px;
 }

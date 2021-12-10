@@ -60,7 +60,7 @@
 }
 
 .reviews__header {
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: $tagline_font_family;
   font-weight: $semibold;
   font-size: 22px;
   line-height: 32px;
@@ -73,6 +73,7 @@
   margin-top: 0;
   margin-bottom: 25px;
   padding: 0 74px;
+  flex-wrap: wrap;
 }
 
 .reviews__item {
@@ -81,6 +82,7 @@
 
 .reviews__blockquote {
   margin: 0;
+  max-width: 360px;
 }
 
 .reviews__text {
@@ -96,7 +98,7 @@
 }
 
 .reviews__author {
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: $tagline_font_family;
   font-style: normal;
   font-weight: $bold;
 }

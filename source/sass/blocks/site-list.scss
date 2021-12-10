@@ -7,6 +7,7 @@
   flex-wrap: wrap;
 }
 
+
 .site-list__link {
   color: $basic_white;
 }
@@ -20,14 +21,19 @@
 }
 
 .site-list--header {
-  padding-left: 337px;
-  justify-content: flex-end;
+  padding-left: 360px;
+  justify-content: flex-start;
 }
 
 .site-list__item--header {
-  padding: 0 20px;
+  padding-bottom: 35px;
+  margin-right: 40px;
+}
+
+.site-list__item--header:last-child {
+  margin-right: 0;
 }
 
 .site-list__item--footer {
-  padding: 0 12px;
+  margin-right: 25px;
 }
